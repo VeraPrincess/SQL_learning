@@ -1,10 +1,14 @@
+/*Показать таблицу*/
 SELECT * FROM Hugo_Award_for_Best_Novel;
 
+/*Изменить название таблицы*/
 /*ALTER TABLE publisher
 RENAME TO Hugo_Award_for_Best_Novel*/
+/*Изменить название столбца*/
 /*ALTER TABLE Hugo_Award_for_Best_Novel
 RENAME COLUMN "org.name" TO book_title*/
 
+/*Добавить данные в таблицу*/
 /*--INSERT INTO publisher
 --VALUES*/
 /*(1, 'Человек без лица', 1953),
@@ -21,4 +25,5 @@ RENAME COLUMN "org.name" TO book_title*/
 (12, 'Имею скафандр - готов путешествовать', 1959),
 (13, 'Корпорация "Бессмертие"', 1959)*/
 
-COPY Hugo_Award_for_Best_Novel TO '/Users/verazinovyeva/PycharmProjects/SQL_learning/Hugo_Award_for_Best_Novel.sql' DELIMITER ',' CSV HEADER;
+/*Скопировать данные табл в файл*/
+/*COPY Hugo_Award_for_Best_Novel TO '/Users/verazinovyeva/PycharmProjects/SQL_learning/Hugo_Award_for_Best_Novel.sql' DELIMITER ',' CSV HEADER;*/
