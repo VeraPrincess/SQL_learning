@@ -1,0 +1,19 @@
+SELECT *
+FROM hugo_award_for_best_novel_60th INNER JOIN hugo_award_for_best_novel_70th
+ON hugo_award_for_best_novel_60th.author = hugo_award_for_best_novel_70th.author
+ORDER BY hugo_award_for_best_novel_60th.publisher_id
+;
+SELECT *
+FROM hugo_award_for_best_novel_60th LEFT JOIN hugo_award_for_best_novel_70th
+ON hugo_award_for_best_novel_60th.author = hugo_award_for_best_novel_70th.author
+;
+SELECT *
+FROM hugo_award_for_best_novel_60th RIGHT JOIN hugo_award_for_best_novel_70th
+ON hugo_award_for_best_novel_60th.author = hugo_award_for_best_novel_70th.author
+
+;
+SELECT *
+FROM hugo_award_for_best_novel_60th FULL OUTER JOIN hugo_award_for_best_novel_70th
+ON hugo_award_for_best_novel_60th.author = hugo_award_for_best_novel_70th.author
+ORDER BY hugo_award_for_best_novel_60th.publisher_id
+;
